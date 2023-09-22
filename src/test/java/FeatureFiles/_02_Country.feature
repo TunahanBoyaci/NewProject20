@@ -17,7 +17,7 @@ Feature: Country Functionality.
 
     Scenario: Create a new country, fill the form
       And Click on add Button
-      And Enter "2e2w2ws" as country name and "x293" as country code
+      And Enter "2e2jqw" as country name and "x301" as country code
       When Click on save button
       Then Success message should be displayed
 

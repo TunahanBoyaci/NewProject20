@@ -46,7 +46,10 @@ public class ParameterDriver {
 //                    threadDriver.set(new ChromeDriver(options));
 //                    break;
 
-                    threadDriver.set(new ChromeDriver());
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--headless","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--window-size=1400,2400");
+
+                    threadDriver.set(new ChromeDriver(options));
                     break;
             }
             threadDriver.get().manage().window().maximize();
