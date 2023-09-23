@@ -47,8 +47,9 @@ public class ParameterDriver {
 //                    break;
 
                     ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--headless","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--window-size=1400,2400");
-
+                    if (!runningFromIntellij()) {
+                        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
+                    }
                     threadDriver.set(new ChromeDriver(options));
                     break;
             }
@@ -67,6 +68,11 @@ public class ParameterDriver {
             WebDriver driver = null;
             threadDriver.set(driver);
         }
+    }
+
+    public static boolean runningFromIntellij(){
+        String classPath = System.getProperty("java.class.path");
+        return classPath.contains("idea_rt.jar");
     }
 
     public static void closePreviousDrivers() {
