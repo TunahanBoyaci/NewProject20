@@ -178,7 +178,7 @@
                         <version>3.1.2</version>
                         <configuration>
                             <includes>
-                                <include>src/test/java/Runners/_02_MultipleFeatures.java</include>
+                                <include>src/test/java/Runners/_01_RunnersIntro.java</include>
                             </includes>
                         </configuration>
                     </plugin>
@@ -186,5 +186,4 @@
             </build>
         </profile>
     </profiles>
-
 </project>
