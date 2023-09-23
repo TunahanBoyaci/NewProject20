@@ -141,7 +141,7 @@
                 <version>3.1.2</version>
                 <configuration>
                     <includes>
-                        <include>src/test/java/Runners/_02_MultipleFeatures.java</include>
+                        <include>target/test-classes/Runners/_02_MultipleFeatures.class</include>
                     </includes>
                 </configuration>
             </plugin>
@@ -160,7 +160,7 @@
                         <version>3.1.2</version>
                         <configuration>
                             <includes>
-                                <include>src/test/java/Runners/_02_MultipleFeatures.java</include>
+                                <include>target/test-classes/Runners/_02_MultipleFeatures.class</include>
                             </includes>
                         </configuration>
                     </plugin>
@@ -178,7 +178,7 @@
                         <version>3.1.2</version>
                         <configuration>
                             <includes>
-                                <include>src/test/java/Runners/_01_RunnersIntro.java</include>
+                                <include>target/test-classes/Runners/_01_RunnersIntro.class</include>
                             </includes>
                         </configuration>
                     </plugin>
