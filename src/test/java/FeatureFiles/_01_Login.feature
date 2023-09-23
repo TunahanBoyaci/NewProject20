@@ -1,7 +1,7 @@
 Feature: Login functionality
   As a user, I am able to log in with valid credentials.
 
-  @Regression
+  @Smoke
   Scenario: Login with valid username and password
     Given Navigate to Campus
     And Enter username and password
