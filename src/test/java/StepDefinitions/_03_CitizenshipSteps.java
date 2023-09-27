@@ -33,9 +33,18 @@ public class _03_CitizenshipSteps {
         dialogContent.clickMethod(dialogContent.searchButton);
     }
 
-    @When("Delete citizenship")
-    public void deleteCitizenship() {
+    @And("Search for {string} as country name and {string} as code")
+    public void searchForAsCountryNameAndAsCode(String name, String code) {
+        dialogContent.sendKeysMethod(dialogContent.nameInboxSearchInboxSearch1, name);
+        dialogContent.sendKeysMethod(dialogContent.codeInboxSearchInboxSearch, code);
+        dialogContent.clickMethod(dialogContent.searchButton);
+    }
+
+    @When("Click on Delete and Confirm")
+    public void clickOnDeleteAndConfirm() {
         dialogContent.clickMethod(dialogContent.deleteButton);
         dialogContent.clickMethod(dialogContent.deleteConfirmButton);
     }
+
+
 }

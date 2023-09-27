@@ -6,7 +6,7 @@
         <parameter name="browser" value="chrome"></parameter>
 
         <classes>
-            <class name="Runners._08_RunnerForParallelTest"></class>
+            <class name="Runners._02_MultipleFeatures"></class>
         </classes>
 
     </test>

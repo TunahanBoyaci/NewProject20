@@ -21,7 +21,7 @@ Feature: Citizenship Functionality
   @Regression
   Scenario Outline: Delete a Citizenship
     And Search for "<CitizenshipName>" as citizenship name and "<CitizenshipShortName>" as short name
-    When Delete citizenship
+    When Click on Delete and Confirm
     Then Success message should be displayed
     Examples: Data for Delete Citizenship scenario
       | CitizenshipName | CitizenshipShortName |

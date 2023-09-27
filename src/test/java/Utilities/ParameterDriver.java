@@ -46,11 +46,12 @@ public class ParameterDriver {
 //                    threadDriver.set(new ChromeDriver(options));
 //                    break;
 
-                    ChromeOptions options = new ChromeOptions();
-                    if (!runningFromIntellij()) {
-                        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
-                    }
-                    threadDriver.set(new ChromeDriver(options));
+//                    ChromeOptions options = new ChromeOptions();
+//                    if (!runningFromIntellij()) {
+//                        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
+//                    }
+//                    threadDriver.set(new ChromeDriver(options));
+                    threadDriver.set(new ChromeDriver()); // delete
                     break;
             }
             threadDriver.get().manage().window().maximize();

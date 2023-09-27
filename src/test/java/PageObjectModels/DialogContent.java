@@ -70,6 +70,9 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "(//input[@data-placeholder=\"Code\"])[2]")
     public WebElement codeFeeType;
 
+    @FindBy(xpath = "(//input[@data-placeholder=\"Code\"])[1]")
+    public WebElement codeInboxSearchInboxSearch;
+
     @FindBy(xpath = "(//input[@data-placeholder=\"Integration Code\"])[1]")
     public WebElement IntegrationFeeType;
 
