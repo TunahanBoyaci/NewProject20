@@ -37,7 +37,7 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "(//input[@data-placeholder='Code'])[2]")
     public WebElement codeInbox;
 
-    @FindBy(xpath = "//span[text()='Save']")
+    @FindBy(xpath = "//span[text()='Save & New']")
     public WebElement saveButton;
 
     @FindBy(xpath = "//span[text()='Search']")

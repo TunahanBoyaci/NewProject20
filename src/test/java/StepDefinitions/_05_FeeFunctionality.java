@@ -29,13 +29,19 @@ public class _05_FeeFunctionality {
     public void fillTheAddFeeForm(DataTable dataTable) {
         List<String> dataList = dataTable.asList(String.class);
 
-        dialogContent.sendKeysMethod(dialogContent.nameFeeType,dataList.get(0));
-        dialogContent.sendKeysMethod(dialogContent.codeInbox,dataList.get(1));
-        dialogContent.sendKeysMethod(dialogContent.IntegrationFeeType,dataList.get(2));
-        dialogContent.sendKeysMethod(dialogContent.prioirityFeeType,dataList.get(3));
+        dialogContent.sendKeysMethod(dialogContent.nameFeeType, dataList.get(0));
+        dialogContent.sendKeysMethod(dialogContent.codeInbox, dataList.get(1));
+        dialogContent.sendKeysMethod(dialogContent.IntegrationFeeType, dataList.get(2));
+        dialogContent.sendKeysMethod(dialogContent.prioirityFeeType, dataList.get(3));
 
         Actions actions = new Actions(ParameterDriver.getDriver());
         Action action = actions.sendKeys(Keys.TAB).build();
         action.perform();
+    }
+
+    @And("Search for {string} as code")
+    public void searchForAsCode(String code) {
+        dialogContent.sendKeysMethod(dialogContent.codeInboxSearchInboxSearch, code);
+        dialogContent.clickMethod(dialogContent.searchButton);
     }
 }
