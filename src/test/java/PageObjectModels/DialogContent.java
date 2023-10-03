@@ -85,13 +85,13 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "(//span[.='Academic Period'])[1]")
     public WebElement academicPeriod;
 
-    @FindBy(xpath = "//span[normalize-space()='Staj 2023']")
+    @FindBy(xpath = "//span[normalize-space()='Test 2024']")
     public WebElement academicPeriodOption;
 
     @FindBy(xpath = "(//span[.='Grade Level'])[1]")
     public WebElement gradeLevel;
 
-    @FindBy(xpath = "//span[normalize-space()='Software Development Engineer in Test']")
+    @FindBy(xpath = "//span[text()=' 9 ']")
     public WebElement gradeLevelOption;
 
     @FindBy(xpath = "//span[text()='Description']")

@@ -24,7 +24,7 @@ public class _07_EntrencateExamSteps {
     @And("Fill the Create Exam Form")
     public void fillTheCreateExamForm(DataTable dataTable) {
         List<String> dataList = dataTable.asList(String.class);
-        dialogContent.sendKeysMethod(dialogContent.createExamName,dataList.get(0));
+        dialogContent.sendKeysMethod(dialogContent.createExamName, dataList.get(0));
         dialogContent.clickMethod(dialogContent.academicPeriod);
         dialogContent.clickMethod(dialogContent.academicPeriodOption);
         dialogContent.clickMethod(dialogContent.gradeLevel);
@@ -37,7 +37,7 @@ public class _07_EntrencateExamSteps {
         dialogContent.clickMethod(dialogContent.examDescription);
         dialogContent.wait.until(ExpectedConditions.visibilityOf(dialogContent.iFrame));
         ParameterDriver.getDriver().switchTo().frame(0);
-        dialogContent.sendKeysMethod(dialogContent.descriptionAndNotesText,dataList.get(0));
+        dialogContent.sendKeysMethod(dialogContent.descriptionAndNotesText, dataList.get(0));
         ParameterDriver.getDriver().switchTo().parentFrame();
     }
 
@@ -47,7 +47,13 @@ public class _07_EntrencateExamSteps {
         dialogContent.clickMethod(dialogContent.examNotes);
         dialogContent.wait.until(ExpectedConditions.visibilityOf(dialogContent.iFrame));
         ParameterDriver.getDriver().switchTo().frame(0);
-        dialogContent.sendKeysMethod(dialogContent.descriptionAndNotesText,dataList.get(0));
+        dialogContent.sendKeysMethod(dialogContent.descriptionAndNotesText, dataList.get(0));
         ParameterDriver.getDriver().switchTo().parentFrame();
+    }
+
+    @And("Search for {string}")
+    public void searchFor(String examName) {
+        dialogContent.sendKeysMethod(dialogContent.nameInboxSearchInboxSearch1, examName);
+        dialogContent.clickMethod(dialogContent.searchButton);
     }
 }
