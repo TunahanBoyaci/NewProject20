@@ -2,6 +2,7 @@ package StepDefinitions;
 
 import PageObjectModels.DialogContent;
 import PageObjectModels.LeftNavBar;
+import Utilities.MyMethods2;
 import Utilities.ParameterDriver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -42,6 +43,7 @@ public class _03_CitizenshipSteps {
 
     @When("Click on Delete and Confirm")
     public void clickOnDeleteAndConfirm() {
+        MyMethods2.myWait(1);
         dialogContent.clickMethod(dialogContent.deleteButton);
         dialogContent.clickMethod(dialogContent.deleteConfirmButton);
     }

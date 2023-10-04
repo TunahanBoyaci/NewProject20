@@ -26,9 +26,16 @@ public class _02_CountrySteps {
     @When("Create a new country")
     public void createANewCountry() {
         dialogContent.clickMethod(dialogContent.addButton);
-        dialogContent.sendKeysMethod(dialogContent.nameInbox,"12dwqd");
-        dialogContent.sendKeysMethod(dialogContent.codeInbox,"121swq");
+        dialogContent.sendKeysMethod(dialogContent.nameInbox,"7ryf");
+        dialogContent.sendKeysMethod(dialogContent.codeInbox,"9yr7");
         dialogContent.clickMethod(dialogContent.saveButton);
+    }
+
+
+    @And("Search for a country")
+    public void searchForACountry() {
+        dialogContent.sendKeysMethod(dialogContent.codeInboxSearchInboxSearch,"9yr7");
+        dialogContent.clickMethod(dialogContent.searchButton);
     }
 
     @Then("Success message should be displayed")

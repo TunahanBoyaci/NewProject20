@@ -13,6 +13,12 @@ Feature: Country Functionality
     When Create a new country
     Then Success message should be displayed
 
+    @Smoke
+  Scenario: Delete a new country
+      And Search for a country
+      When Click on Delete and Confirm
+    Then Success message should be displayed
+
   @Smoke
   Scenario: Create a new country, fill the form
     And Click on add Button

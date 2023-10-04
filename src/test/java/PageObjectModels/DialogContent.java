@@ -37,8 +37,11 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "(//input[@data-placeholder='Code'])[2]")
     public WebElement codeInbox;
 
-    @FindBy(xpath = "//span[text()='Save & New']")
+    @FindBy(xpath = "//span[text()='Save']")
     public WebElement saveButton;
+
+    @FindBy(xpath = "//span[text()='Save & New']")
+    public WebElement saveAndNewButton;
 
     @FindBy(xpath = "//span[text()='Search']")
     public WebElement searchButton;
@@ -46,7 +49,7 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "//div[contains(text(),'successfully')]")
     public WebElement successMessage;
 
-    @FindBy(xpath = "//button[@color='warn']")
+    @FindBy(xpath = "(//button[@color='warn'])[1]")
     public WebElement deleteButton;
 
     @FindBy(xpath = "//span[normalize-space()='Delete']")

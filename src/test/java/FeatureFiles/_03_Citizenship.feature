@@ -14,9 +14,9 @@ Feature: Citizenship Functionality
     Then Success message should be displayed
     Examples: Data for Citizenship scenario
       | CitizenshipName | CitizenshipShortName |
-      | 112s1           | 1d34v                |
-      | s1s2ew          | 43v5y                |
-      | 23g78j          | 3v45                 |
+      | j4g3h2          | 9iu0                 |
+      | 3h5v5j4         | 8u8j                 |
+      | 4h3gg5          | 68jk                 |
 
   @Regression
   Scenario Outline: Delete a Citizenship
@@ -25,6 +25,6 @@ Feature: Citizenship Functionality
     Then Success message should be displayed
     Examples: Data for Delete Citizenship scenario
       | CitizenshipName | CitizenshipShortName |
-      | 112s1           | 1d34v                |
-      | s1s2ew          | 43v5y                |
-      | 23g78j          | 3v45                 |
+      | j4g3h2          | 9iu0                 |
+      | 3h5v5j4         | 8u8j                 |
+      | 4h3gg5          | 68jk                 |

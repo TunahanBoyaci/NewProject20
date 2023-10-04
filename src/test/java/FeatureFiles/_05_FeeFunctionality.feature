@@ -13,7 +13,7 @@ Feature: Fee Functionality
       | M803         |
       | 23kio        |
       | 946          |
-    When Click on save button
+    When Click on save and new button
     Then Success message should be displayed
 
   Scenario: Delete a Fee

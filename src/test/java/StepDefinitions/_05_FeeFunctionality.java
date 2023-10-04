@@ -6,6 +6,7 @@ import Utilities.BaseDriver;
 import Utilities.ParameterDriver;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.When;
 import io.cucumber.java.ht.Le;
 import org.checkerframework.checker.units.qual.K;
 import org.openqa.selenium.Keys;
@@ -43,5 +44,10 @@ public class _05_FeeFunctionality {
     public void searchForAsCode(String code) {
         dialogContent.sendKeysMethod(dialogContent.codeInboxSearchInboxSearch, code);
         dialogContent.clickMethod(dialogContent.searchButton);
+    }
+
+    @When("Click on save and new button")
+    public void clickOnSaveAndNewButton() {
+        dialogContent.clickMethod(dialogContent.saveAndNewButton);
     }
 }
