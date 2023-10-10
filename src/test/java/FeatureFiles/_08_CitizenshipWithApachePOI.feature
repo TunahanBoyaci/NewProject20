@@ -7,3 +7,6 @@ Feature: Citizenship with Apache POI
 
   Scenario: Create a new Citizenship
     And Create a citizenship with Apache POI
+
+    Scenario: Delete a new Citizenship
+      And Delete a citizenship with Apache POI
