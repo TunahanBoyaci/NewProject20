@@ -4,9 +4,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions (
-        features = "src/test/java/FeatureFiles/_03_Citizenship.feature",
+        features = "src/test/java/FeatureFiles/_01_Login.feature",
         glue = "StepDefinitions",
-        tags = "Regression",
         plugin = {"pretty", "html:target/site/cucmber-pretty", "json:target/cucumber/cucumber.json"}
 )
 

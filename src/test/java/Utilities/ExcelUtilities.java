@@ -69,7 +69,7 @@ public class ExcelUtilities {
         return returnList;
     }
 
-    public static void writeDataToExcel(String path, Scenario scenario, LocalDateTime startTime, LocalDateTime endTime, Duration duration) {
+    public static void writeDataToExcel(String path, Scenario scenario, String startTime, String endTime, Duration duration) {
         File file = new File(path);
         if (!file.exists()) {
             XSSFWorkbook workbook = new XSSFWorkbook();
